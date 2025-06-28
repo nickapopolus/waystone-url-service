@@ -55,6 +55,7 @@ debug.test
 ehthumbs.db
 Thumbs.db
 *~
+proto/*
 
 # Certificates and keys
 *.pem
