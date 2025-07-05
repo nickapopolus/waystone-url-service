@@ -7,7 +7,7 @@ COPY . .
 RUN if [ -f "../go.sum" ]; then go mod download; fi || true
 
 # Build the binary
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o url-service ./cmd/server
+RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o url-service ./cmd/url
 
 # Final stage
 FROM alpine:latest
